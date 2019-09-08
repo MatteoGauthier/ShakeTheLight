@@ -1,0 +1,36 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Mattaio\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js init
+
+PATH: 
+  C:\Users\Mattaio\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Mattaio\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;E:\Program Files\ImageMagick-7.0.8-Q16;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\PuTTY;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;E:\Program Files\Android\AndroidSDK\emulator;E:\Program Files\Android\AndroidSDK\platform-tools;E:\Program Files\Chocolatey;E:\Program Files\Chocolatey\bin;C:\platform-tools;D:\Soft\b64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Soft\Command;C:\Program Files\Microsoft VS Code\bin;E:\Mattaio\AndroidSDK\build-tools\28.0.3;C:\Users\Mattaio\Downloads\ColorTool;D:\Soft\php-7.3.4-Win32-VC15-x64;C:\Program Files\OpenVPN\bin;D:\Soft\scrcpy-win64;E:\Go\bin;C:\Users\Mattaio\scoop\shims;C:\Users\Mattaio\.cargo\bin;C:\Users\Mattaio\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Users\Mattaio\AppData\Local\Programs\Python\Python37-32;C:\Users\Mattaio\AppData\Local\Microsoft\WindowsApps;C:\Users\Mattaio\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Mattaio\AppData\Roaming\npm;C:\Users\Mattaio\AppData\Local\hyper\app-2.1.2\resources\bin;D:\Soft\SysinternalsSuite;E:\Program Files\nim-0.19.4\bin;C:\Users\Mattaio\.nimble\bin;D:\Soft\spicetify-0.6.1-windows-x64;C:\Users\Mattaio\AppData\Local\GitHubDesktop\bin;C:\Users\Mattaio\go\bin;D:\Soft\xpdf-tools-win-4.01.01\bin64;D:\Soft\mongodb-win32-x86_64-2008plus-ssl-4.0.10\bin;D:\Soft\ffmpeg-20190612-caabe1b-win64-static\bin;C:\Program Files\Common Files\Autodesk Shared;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files\nodejs;E:\Program Files\WorldPainter;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\Windows Live\Shared;E:\Program Files\ImageMagick-7.0.8-Q16;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\PuTTY;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;E:\Program Files\Android\AndroidSDK\emulator;E:\Program Files\Android\AndroidSDK\platform-tools;E:\Program Files\Chocolatey;E:\Program Files\Chocolatey\bin;C:\platform-tools;D:\Soft\b64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Soft\Command;C:\Program Files\Microsoft VS Code\bin;E:\Mattaio\AndroidSDK\build-tools\28.0.3;C:\Users\Mattaio\Downloads\ColorTool;D:\Soft\php-7.3.4-Win32-VC15-x64;C:\Program Files\OpenVPN\bin;D:\Soft\scrc;C:\Users\Mattaio\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Mattaio\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Users\Mattaio\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:136724:13)
+      at Interface.emit (events.js:198:13)
+      at Interface._ttyWrite (readline.js:801:16)
+      at ReadStream.onkeypress (readline.js:184:10)
+      at ReadStream.emit (events.js:198:13)
+      at emitKeys (internal/readline.js:424:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1075:36)
+      at ReadStream.emit (events.js:198:13)
+      at addChunk (_stream_readable.js:288:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

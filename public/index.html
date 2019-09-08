@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css/minireset.css" />
+        <script src="https://cdn.jsdelivr.net/gh/alexgibson/shake.js/shake.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2.2.0/dist/socket.io.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="buttons">
+            <a class="btn" id="TOGGLE" onclick="toggle()">TOGGLE</a>
+            <div class="other">
+                <a class="btn" id="ON" onclick="on()">ON</a>
+                <a class="btn" id="OFF" onclick="off()">OFF</a>
+            </div>
+            <br>
+            <div class="status">
+
+            </div>
+        </div>
+
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            var socket = io()
+            var socket = io.connect("/")
+            var myShakeEvent = new Shake({
+                threshold: 15, // optional shake strength threshold
+                timeout: 1000 // optional, determines the frequency of event generation
+            })
+            myShakeEvent.start()
+
+            window.addEventListener("shake", shakeEventDidOccur, false)
+
+            function on() {
+                socket.emit("power-on", true)
+            }
+            function off() {
+                socket.emit("power-off", true)
+            }
+            function toggle() {
+                socket.emit("toggle", true)
+            }
+
+            socket.on("shaked-ok", data => {
+                console.log(data)
+                document.body.style.backgroundColor = "#" + ((Math.random() * 0xffffff) << 0).toString(16)
+            })
+            socket.on('status-on', data => {
+              document.querySelector("div.status").classList.add('status-on')
+            })
+            socket.on('status-off', data => {
+              document.querySelector("div.status").classList.add('status-off')
+            })
+          
+            //function to call when shake occurs
+            function shakeEventDidOccur() {
+                //put your own code here etc.
+                console.log("shake!")
+                socket.emit("shaked", "cc")
+            }
+        </script>
+    </body>
+</html>

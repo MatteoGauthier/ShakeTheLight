@@ -1,0 +1,55 @@
+.buttons {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  margin-top: 5rem;
+  width: 70%;
+  user-select: none;
+}
+
+.other {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.status-on {
+  content: 'light is on'
+}
+
+.status-off {
+  content: 'light is off'
+}
+
+.btn {
+  font-family: Roboto;
+  font-size: 32px;
+  text-align: center;
+  border: 1px solid #000000;
+  padding: 7px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.btn:active {
+  transform: scale(0.98);
+
+}
+
+#TOGGLE {
+  background-color: #FFC5A4;
+}
+
+#ON {
+  -webkit-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+#OFF {
+  -webkit-flex: 1 0 auto;
+  flex: 1 0 auto;
+  color: #fff;
+  background-color: #000;
+}
